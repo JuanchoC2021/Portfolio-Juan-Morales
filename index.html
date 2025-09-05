@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Juan Morales — Community Manager & Creador de Contenido</title>
+  <meta name="description" content="Portfolio de Community Manager y Social Media: estrategia, creación de contenido, growth y gestión de comunidades." />
+  <meta name="keywords" content="community manager, social media, creador de contenido, estrategia, marketing digital, redes sociales, meta ads, tiktok, instagram, linkedin" />
+  <link rel="icon" href="favicon.ico" />
+  <link rel="preconnect" href="https://images.unsplash.com" crossorigin>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="manifest" href="manifest.json">
+</head>
+<body>
+  <!-- Header -->
+  <header class="nav">
+    <div class="nav-inner">
+      <div class="brand">
+        <img src="tu-logo.png" alt="Logo" class="logo" />
+        Juan Morales
+      </div>
+      <nav class="menu" role="navigation">
+        <a href="#servicios">Servicios</a>
+        <a href="#trabajos">Trabajos</a>
+        <a href="#precios">Precios</a>
+        <a href="#contacto">Contacto</a>
+        <button id="theme" class="btn small ghost" aria-label="Cambiar tema">🌓</button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Contenido principal -->
+  <main id="top" class="wrap">
+    <!-- HERO -->
+    <section class="hero">
+      <div>
+        <h1>Juan Morales</h1>
+        <p class="lead">Community Manager & Creador de Contenido. Estrategia, creatividad y crecimiento digital.</p>
+        <a href="#contacto" class="btn">¡Trabajemos juntos!</a>
+      </div>
+      <img src="tu-foto.jpg" alt="Foto de Juan Morales, Community Manager" style="max-width:220px; border-radius:20px;" />
+    </section>
+
+    <!-- SERVICIOS -->
+    <section id="servicios" class="section">
+      <h2>Servicios</h2>
+      <p class="lead">Soluciones digitales para potenciar tu marca.</p>
+      <div class="grid cols-2">
+        <div class="card service">
+          <h3>Gestión de Redes</h3>
+          <ul>
+            <li>Instagram, TikTok, LinkedIn</li>
+            <li>Planificación y calendario</li>
+          </ul>
+        </div>
+        <div class="card service">
+          <h3>Publicidad Digital</h3>
+          <ul>
+            <li>Meta Ads, Google Ads</li>
+            <li>Segmentación y optimización</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- TRABAJOS -->
+    <section id="trabajos" class="section">
+      <h2>Trabajos</h2>
+      <div class="grid cols-3" id="work-grid">
+        <article class="card work-item" data-category="instagram">
+          <img src="https://images.unsplash.com/photo-1604882357868-3aa9ee2c1b3a?q=80" alt="Ejemplo Instagram" loading="lazy" />
+          <div class="meta">Instagram</div>
+        </article>
+        <article class="card work-item" data-category="tiktok">
+          <img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?q=80" alt="Ejemplo TikTok" loading="lazy" />
+          <div class="meta">TikTok</div>
+        </article>
+        <article class="card work-item" data-category="linkedin">
+          <img src="https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?q=80" alt="Ejemplo LinkedIn" loading="lazy" />
+          <div class="meta">LinkedIn</div>
+        </article>
+      </div>
+    </section>
+
+    <!-- TESTIMONIOS -->
+    <section class="section">
+      <h2>Testimonios</h2>
+      <div class="grid cols-3">
+        <blockquote class="card">“Transformó nuestra presencia en redes.”</blockquote>
+        <blockquote class="card">“Contenido fresco y métricas claras.”</blockquote>
+        <blockquote class="card">“Excelente gestión de comunidad.”</blockquote>
+      </div>
+    </section>
+
+    <!-- PRECIOS -->
+    <section id="precios" class="section">
+      <h2>Paquetes</h2>
+      <div class="price">
+        <div class="plan">
+          <h3>Starter</h3>
+          <p class="num">USD 250 / mes</p>
+          <ul>
+            <li>Gestión básica de 2 redes sociales</li>
+            <li>4 publicaciones mensuales</li>
+            <li>Informe mensual de métricas</li>
+            <li>Soporte por email</li>
+          </ul>
+        </div>
+        <div class="plan">
+          <h3>Growth</h3>
+          <p class="num">USD 350 / mes</p>
+          <ul>
+            <li>Gestión profesional de hasta 3 redes</li>
+            <li>8 publicaciones mensuales</li>
+            <li>Campañas publicitarias básicas</li>
+            <li>Informe quincenal de métricas</li>
+            <li>Soporte prioritario</li>
+          </ul>
+        </div>
+        <div class="plan">
+          <h3>Pro</h3>
+          <p class="num">USD 500 / mes</p>
+          <ul>
+            <li>Gestión avanzada de todas tus redes</li>
+            <li>12 publicaciones mensuales</li>
+            <li>Campañas publicitarias avanzadas</li>
+            <li>Optimización de contenido y estrategia</li>
+            <li>Informe semanal y consultoría personalizada</li>
+            <li>Soporte premium 24/7</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACTO -->
+    <section id="contacto" class="section contact">
+      <h2>Contacto</h2>
+      <form id="contact-form"
+        action="https://formspree.io/f/xeolppop"
+        method="POST"
+      >
+        <label>
+          Tu email:
+          <input type="email" name="email" required>
+        </label>
+        <label>
+          Tu mensaje:
+          <textarea name="message" required></textarea>
+        </label>
+        <button type="submit" class="btn small">Enviar</button>
+      </form>
+      <div id="form-success" style="display:none; color:var(--ok); font-weight:600; margin-top:16px;">
+        ¡Gracias por tu mensaje! Te responderé pronto.
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="social">
+      <a href="https://instagram.com/" target="_blank" rel="noopener" class="btn small">Instagram</a>
+      <a href="https://linkedin.com/" target="_blank" rel="noopener" class="btn small">LinkedIn</a>
+      <a href="mailto:juaignaciomorales05@gmail.com?subject=Contacto%20desde%20Portfolio" class="btn small" aria-label="Enviar email">Email</a>
+    </div>
+    <small>&copy; <span id="year"></span> Juan Morales</small>
+  </footer>
+
+  <!-- Scripts -->
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+
+    // Formulario de contacto sin backend
+    document.getElementById("contact-form").addEventListener("submit", async (e) => {
+      e.preventDefault();
+      const data = {
+        nombre: e.target.nombre.value,
+        email: e.target.email.value,
+        mensaje: e.target.mensaje.value
+      };
+      try {
+        const res = await fetch("https://TU-APP.onrender.com/api/contacto", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(data)
+        });
+        const result = await res.json();
+        alert(result.success ? "Mensaje enviado ✅" : "Error ❌");
+        if (result.success) e.target.reset();
+      } catch (err) {
+        alert("Error de conexión ❌");
+      }
+    });
+
+    if ("serviceWorker" in navigator) {
+      navigator.serviceWorker.register("/service-worker.js");
+    }
+
+    // Modo oscuro/claro
+    const themeBtn = document.getElementById("theme");
+    themeBtn.addEventListener("click", () => {
+      const root = document.documentElement;
+      const current = root.getAttribute("data-theme");
+      root.setAttribute("data-theme", current === "light" ? "dark" : "light");
+    });
+    // Inicializa el tema si no existe
+    if (!document.documentElement.getAttribute("data-theme")) {
+      document.documentElement.setAttribute("data-theme", "dark");
+    }
+  </script>
+</body>
+</html>
