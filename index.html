@@ -215,8 +215,7 @@
     menuToggle.addEventListener('click', () => {
       menu.classList.toggle('open');
     });
-
-    // Opcional: cerrar menú al hacer clic en un enlace
+    // Cierra el menú al hacer clic en un enlace
     menu.querySelectorAll('a, button').forEach(el => {
       el.addEventListener('click', () => {
         menu.classList.remove('open');
